@@ -1,0 +1,296 @@
+body {
+	background-color: black;
+	margin: 0px;
+	padding: 0px;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(23, 100px);
+}
+
+header {
+	background-color: black;
+	font-family: 'Bungee';
+	font-size: 45px;
+	position: fixed;
+	color: white;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+}
+
+footer{
+	background-color: black;
+	position: fixed;
+	bottom: 0px;
+	color: white;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+.begin {
+	background-color: lime;
+	grid-column: 1/7;
+	grid-row: 1;
+}
+
+.smallContainer{
+	position: relative;
+	background-color: ;
+	height: 50px;
+	width:100%;
+	color: white;
+}
+
+.ion-social-codepen-outline{
+	background-color: white;
+}
+
+.logos {
+	position: absolute;
+	background-color: black; /*green*/
+	height: 50px;
+	width: 40px;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	padding-left: 4px;
+	font-size: 35px;
+	color: teal;
+}
+
+.cTwo{
+	position: absolute;
+	font-family: 'Righteous';
+	font-size: 17px;
+	background-color: black; /*red*/
+	height: 50px;
+	width: 110px;
+	top: 0px;
+	left: 40px;
+	overflow: hidden;
+}
+.centerS{
+	position: relative;
+	top: 25%;
+	left: 15%;
+}
+
+ul {
+	font-family: 'Orbitron';
+	font-size: 15px;
+}
+ /* 4 */
+
+/*MAIN CONTENT BELOW*/
+/*______________________________*/
+
+
+
+#innerNav {
+	/*adding a relative or absolute here will break sticky*/
+	background-color: black;
+	color: white;
+	left: 0px;
+	overflow: hidden;
+	height: 1300px;
+	width: 150px;
+	z-index: -1;
+	white-space: nowrap;
+	list-style-type: none;
+
+}
+
+#iconOne{
+	background-color:black;
+	height:40px;
+	width:40px;
+}
+.sticky {
+	background-color: green;
+	position: fixed;
+	height: 1300px;
+	width: 100px;
+	bottom: 0px;
+}
+
+
+
+.oneA {
+	background-color: yellow;
+	grid-column: 2/4;
+	grid-row: 2/5;
+}
+
+.oneB {
+	background-color: pink;
+	grid-column: 4/6;
+	grid-row: 2/5;
+}
+
+.twoA {
+	background-color: green;
+	grid-column: 2/4;
+	grid-row: 5/8;
+}
+
+.twoB {
+	background-color: teal;
+	grid-column: 4/6;
+	grid-row: 5/8;
+}
+
+.threeA {
+	background-color: pink;
+	grid-column: 2/4;
+	grid-row: 8/11;
+}
+
+.threeB {
+	background-color: yellow;
+	grid-column: 4/6;
+	grid-row: 8/11;
+}
+
+.fourA {
+	background-color: pink;
+	grid-column: 2/4;
+	grid-row: 11/14;
+}
+
+.fourB {
+	background-color: yellow;
+	grid-column: 4/6;
+	grid-row: 11/14;
+}
+
+.fiveA {
+	background-color: pink;
+	grid-column: 2/4;
+	grid-row: 14/17;
+}
+
+.fiveB {
+	background-color: yellow;
+	grid-column: 4/6;
+	grid-row: 14/17;
+}
+
+.sixA {
+	background-color: pink;
+	grid-column: 2/4;
+	grid-row: 17/20;
+}
+
+.sixB {
+	background-color: yellow;
+	grid-column: 4/6;
+	grid-row: 17/20;
+}
+
+.sevenA {
+	background-color: pink;
+	grid-column: 2/4;
+	grid-row: 20/23;
+}
+
+.sevenB {
+	background-color: yellow;
+	grid-column: 4/6;
+	grid-row: 20/23;
+}
+
+
+
+/*ALL MEDIA QUERIES BELLOW_____________*/
+/*DETECT SCROLL AND ADD STICK*/
+
+/* IF WINDOW MEDIA IS SMALLER THAN 720PX DO THE FOLLOWING */
+@media (max-width: 720px) {
+
+	.wrapper {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(37, 100px);
+	}
+
+
+
+
+	.innerNav {
+		 display: none;
+	}
+
+	.oneA {
+		grid-column: 1/7;
+	}
+
+	.oneB {
+		grid-column: 1/7;
+		grid-row: 5/8;
+	}
+
+	.twoA {
+		grid-column: 1/7;
+		grid-row: 8/11;
+	}
+
+	.twoB {
+		grid-column: 1/7;
+		grid-row: 11/14;
+	}
+
+	.threeA {
+		grid-column: 1/7;
+		grid-row: 8/11;
+	}
+
+	.threeB {
+		grid-column: 1/7;
+		grid-row: 11/14;
+	}
+
+	.fourA {
+		grid-column: 1/7;
+		grid-row: 14/17;
+	}
+
+	.fourB {
+		grid-column: 1/7;
+		grid-row: 17/20;
+	}
+
+	.fiveA {
+		grid-column: 1/7;
+		grid-row: 20/23;
+	}
+
+	.fiveB {
+		grid-column: 1/7;
+		grid-row: 23/26;
+	}
+
+	.sixA {
+		grid-column: 1/7;
+		grid-row: 26/29;
+	}
+
+	.sixB {
+		grid-column: 1/7;
+		grid-row: 29/32;
+	}
+
+	.sevenA {
+		grid-column: 1/7;
+		grid-row: 32/35;
+	}
+
+	.sevenB {
+		grid-column: 1/7;
+		grid-row: 35/38;
+	}
+}

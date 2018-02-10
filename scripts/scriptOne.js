@@ -15,6 +15,7 @@
 	function awake() {
 		console.log(state.switchG)
 		rainDiv.innerHTML = state.bits;
+		alert('This site is currently under construction.');
 	};
 	
 	function flipSwitch() {

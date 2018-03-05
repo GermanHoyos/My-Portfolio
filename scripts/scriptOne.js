@@ -1,3 +1,4 @@
+
 	//initial state object of entire site below(globally accessible)
 	let state = {
 		switchG: 'On',
@@ -19,7 +20,7 @@
 	};
 
 	function flipSwitch() {
-		if (state.switchG == 'On'){
+		if (state.switchG == 'On') {
 			state.switchG = 'Off';
 			divSwitch.innerHTML = 'Off';
 			console.log(state.switchG);
@@ -96,6 +97,7 @@
 		console.log(' overlap ' + overlap);
 */
 //FUNCTION - lockElement re-factored
+
 function locElement(element) {
 
 	const element = document.getElementById(element); //HTML element passed as argument

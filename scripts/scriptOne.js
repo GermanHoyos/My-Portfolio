@@ -8,18 +8,15 @@
 
 	let divSwitch = document.querySelector('div.onOffSwitch');
 	let rainDiv = document.querySelector('div.rainDiv');
+		rainDiv.innerHTML = state.bits;
 	let bitInterval = setInterval(toggleBits, 500);
 
 	divSwitch.addEventListener('click', flipSwitch);
 	divSwitch.addEventListener('animationend',clearSwitch);
 
-	function awake() {
-		console.log(state.switchG)
-		rainDiv.innerHTML = state.bits;
-		/*alert('This site is currently under construction.');*/
-	};
-
 	function flipSwitch() {
+
+
 		if (state.switchG == 'On') {
 			state.switchG = 'Off';
 			divSwitch.innerHTML = 'Off';

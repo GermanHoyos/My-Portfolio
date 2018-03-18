@@ -7,7 +7,7 @@ body {
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(23, 100px);
+	grid-template-rows: repeat(60, 100px);
 }
 
 header {
@@ -376,15 +376,39 @@ ul {
 	min-width: 600px;
 }
 
+.centerTextFourA {
+	position: relative;
+	background-color: transparent;
+	border-radius: 5px;
+	top: 10%;
+	margin: auto;
+	height: 90%;
+	width: 90%;
+	overflow: hidden;
+	font-size: 20px;
+}
+
 .fiveA {
 	font-family: 'Montserrat';
 	border-radius: 5px;
-	background-color: black;
+	background-color: transparent;
 	color: white;
 	grid-column: 2/6;
-	grid-row: 14/17;
+	grid-row: 14/21;
 	color: #cccccc;
 	min-width: 600px;
+}
+
+.centerPenFiveA {
+	position: relative;
+	background-color: transparent;
+	border-radius: 5px;
+	top: 6%;
+	margin: auto;
+	height: 87%;
+	width: 90%;
+	overflow: hidden;
+	font-size: 20px;
 }
 
 .sixA {
@@ -393,22 +417,45 @@ ul {
 	background-color: #2a2d31;
 	color: white;
 	grid-column: 2/6;
-	grid-row: 17/20;
+	grid-row: 21/24;
 	color: #cccccc;
 	min-width: 600px;
+}
+
+.centerTextSixA {
+	position: relative;
+	background-color: transparent;
+	border-radius: 5px;
+	top: 10%;
+	margin: auto;
+	height: 90%;
+	width: 90%;
+	overflow: hidden;
+	font-size: 20px;
 }
 
 .sevenA {
 	font-family: 'Montserrat';
 	border-radius: 5px;
-	background-color: black;
+	background-color: transparent;
 	color: white;
 	grid-column: 2/6;
-	grid-row: 20/23;
+	grid-row: 24/31;
 	color: #cccccc;
 	min-width: 600px;
 }
 
+.centerPenSevenA {
+	position: relative;
+	background-color: blue;
+	border-radius: 5px;
+	top: 6%;
+	margin: auto;
+	height: 87%;
+	width: 90%;
+	overflow: hidden;
+	font-size: 20px;
+}
 /* ALL MEDIA QUERIES BELLOW */
 
 @media (max-width: 720px) {

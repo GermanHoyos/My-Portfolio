@@ -6,6 +6,8 @@
 		bitsOff: [0,0,0,0]
 	};
 
+	
+
 	let divSwitch = document.querySelector('div.onOffSwitch');
 	let rainDiv = document.querySelector('div.rainDiv');
 	let arrow = document.querySelector('div.switchArrow');

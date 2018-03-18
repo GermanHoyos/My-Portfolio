@@ -21,6 +21,7 @@ header {
 	text-align: center;
 	z-index: 2;
 	overflow: hidden;
+	min-width: 600px;
 }
 
 footer{
@@ -31,6 +32,7 @@ footer{
 	height: 50px;
 	width: 100%;
 	text-align: center;
+	min-width: 600px;
 }
 
 .begin {
@@ -125,7 +127,7 @@ ul {
 	grid-column: 2/6;
 	grid-row: 2/5;
 	text-align: center;
-
+	min-width: 600px;
 }
 
 .twoA {
@@ -137,43 +139,70 @@ ul {
 	grid-row: 5/8;
 	text-align: center;
 	color: #cccccc;
+	font-size: 20px;
+	min-width: 600px;
 }
 
 .wrapperTwoA{
 	font-family: 'Montserrat';
-	background-color: transparent;
+	background-color: #2a2d31;
 	border-radius: 15px;
-	position:relative;
-	margin-left: 2%;
+	position: relative;
 	height: 100%;
 	width: 100%;
-
 }
 
 .leftBoxTwoA{
-	min-width: 340px;
 	background-color: #2a2d31; /* #2a2d31*/
+	border-radius: 5px;
 	position: absolute;
-	top: 5%;
-	left: 0px;
+	top: 0%;
+	left: 0%;
 	width: 50%;
-	height: 240px;
+	height: 100%;
 	text-align: left;
 	font-size: 15px;
 	color: #cccccc;
 	overflow: hidden;
+	text-align: justify;
+	margin: auto;
+	font-size: 20px;
+}
+
+.centerTextTwoA {
+	position: relative;
+	background-color: transparent;
+	border-radius: 5px;
+	top: 10%;
+	margin: auto;
+	height: 90%;
+	width: 90%;
+	overflow: hidden;
 }
 
 .rightBoxTwoA{
-	background-color: grey;
+	background-color: #2a2d31;
 	border-radius: 5px;
 	position: absolute;
-	top: 15%;
-	right: 0%;
-	width: 200px;
-	height: 20px;
+	top: 0%;
+	left: 50%;
+	width: 50%;
+	height: 100%;
 	text-align:left;
 	font-size: 15px;
+	padding: 30px;
+	overflow: hidden;
+}
+
+.containSwitch{
+	position: relative;
+	background-color: grey;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: auto;
+	height: 200px;
+	width: 100px;
+	overflow: hidden;
 }
 
 .onOffSwitch{
@@ -181,111 +210,215 @@ ul {
 	background-color: #33cc33;
 	border-radius: 5px;
 	position: absolute;
+	top: 0%;
 	left: 0%;
-	height: 20px;
-	width: 55px;
+	height: 40px;
+	width: 100px;
 	overflow: hidden;
 	text-align: center;
+	z-index: 1;
+	font-size: 30px;
 }
+
+.switchArrow{
+	background: transparent;
+	top: 15%;
+	left: 35%;
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-radius: 5px;
+	border-top: 20px solid #660000;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	animation: switchIsOn 1.8s infinite;
+
+}
+
+@keyframes switchIsOn {
+	0% {
+		top:15%;
+		border-color: transparent;
+	}
+	100% {
+		top:65%;
+		border-color: solid;
+	}
+}
+
+@keyframes switchIsOff{
+	0% {
+		top:55%;
+		border-color: transparent;
+		border-top: 15px solid transparent;
+		border-bottom: 20px solid transparent;
+	}
+	100% {
+		top:5%;
+		border-color: solid;
+		border-top: 15px solid transparent;
+		border-bottom: 20px solid green;
+	}
+}
+
 .rainDiv{
 	background-color: black;
 	border-radius: 5px;
 	position: absolute;
-	top: 0px;
-	left: 100px;
-	height: 20px;
+	top: 80%;
+	left: 0%;
+	height: 40px;
 	width: 100px;
 	overflow: hidden;
 	text-align: center;
 	color: green;
-}
-
-.switchPicture{
-	position: relative;
-	height: 50px;
-	width: 50px;
+	font-size: 30px;
 }
 
 @keyframes off {
-	0%{ background-color: #33cc33; left: 0%;}
-	100%{ background-color: red; left: 23%;}
+	0%	{
+		background-color: #33cc33;
+		top: 0%;
+	}
+
+	100%{
+		background-color: #660000;
+		top: 60%;
+	}
 }
 
 @keyframes on {
-	0%{ background-color: red; left: 23%;}
-	100%{ background-color: #33cc33; left: 0%;}
+	0%	{
+		background-color: #660000;
+		top: 60%;
+	}
+	100%{
+		background-color: #33cc33;
+		top: 0%;
+	}
 }
 
 .threeA {
+	font-family: 'Montserrat';
 	border-radius: 5px;
 	background-color: black;
 	color: white;
 	grid-column: 2/6;
 	grid-row: 8/11;
+	color: #cccccc;
+	min-width: 600px;
+}
+
+.boxController {
+	background-color: black; /*uncomment for debugging*/
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.leftBoxThreeA {
+	position: absolute;
+	background-color: transparent; /*uncomment for debugging*/
+	border-radius: 5px;
+	top: 0%;
+	left: 0%;
+	width: 50%;
+	height: 100%;
+	transform: scale(1);
+	overflow: hidden;
+}
+
+.centerPenThreeA {
+	position: relative;
+	background-color: transparent;
+	border-radius: 5px;
+	top: 5%;
+	margin: auto;
+	height: 90%;
+	width: 90%;
+	overflow: hidden;
+}
+
+.centerTextThreeA {
+	position: relative;
+	background-color: transparent;
+	border-radius: 5px;
+	top: 10%;
+	margin: auto;
+	height: 90%;
+	width: 90%;
+	overflow: hidden;
+}
+
+.rightBoxThreeA{
+	position: absolute;
+	background-color: transparent; /*uncomment for debugging*/
+	border-radius: 5px;
+	top: 0%;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	text-align: justify;
+	margin: auto;
+	font-size: 20px;
 }
 
 .fourA {
+	font-family: 'Montserrat';
 	border-radius: 5px;
 	background-color: #2a2d31;
 	color: white;
 	grid-column: 2/6;
 	grid-row: 11/14;
+	color: #cccccc;
+	min-width: 600px;
 }
 
 .fiveA {
+	font-family: 'Montserrat';
 	border-radius: 5px;
 	background-color: black;
 	color: white;
 	grid-column: 2/6;
 	grid-row: 14/17;
+	color: #cccccc;
+	min-width: 600px;
 }
 
 .sixA {
+	font-family: 'Montserrat';
 	border-radius: 5px;
 	background-color: #2a2d31;
 	color: white;
 	grid-column: 2/6;
 	grid-row: 17/20;
+	color: #cccccc;
+	min-width: 600px;
 }
 
 .sevenA {
+	font-family: 'Montserrat';
 	border-radius: 5px;
 	background-color: black;
 	color: white;
 	grid-column: 2/6;
 	grid-row: 20/23;
+	color: #cccccc;
+	min-width: 600px;
 }
 
 /* ALL MEDIA QUERIES BELLOW */
-@media(min-width: 900px){
-/* IF WINDOW MEDIA IS LARGER THAN 900PX DO THE FOLLOWING */
-	.rightBoxTwoA{
-		left: 65%;
-	}
-}
 
 @media (max-width: 720px) {
 	/* DETECT SCROLL AND ADD STICK */
 	/* IF WINDOW MEDIA IS SMALLER THAN 720PX DO THE FOLLOWING */
 
-	.switchPicture {
-		top: 0px;
-		transform: scale(0.8);
-	}
-
 	header {
 		font-size: 30px;
 	}
 
-	.rightBoxTwoA {
-		top: 5%;
-		left: 27%;
-	}
-
-	.leftBoxTwoA {
-		left: 12%;
-		height: 200px;
-	}
 	.wrapper {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
@@ -293,17 +426,12 @@ ul {
 	}
 
 	#innerNav {
-		 display: none;
+		display: none;
 	}
 
 	.oneA {
 		grid-column: 1/7;
 		font-size: 20px;
-	}
-
-	.leftBoxTwoA{
-		font-size: 13px;
-		top: 15%;
 	}
 
 	.twoA {
@@ -336,4 +464,4 @@ ul {
 		grid-column: 1/7;
 		grid-row: 20/23;
 	}
-}
+}/*

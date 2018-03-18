@@ -1,22 +1,22 @@
-
 	//initial state object of entire site below(globally accessible)
 	let state = {
 		switchG: 'On',
+		switchIsOn: true,
 		bits: [0,0,0,0],
 		bitsOff: [0,0,0,0]
 	};
 
 	let divSwitch = document.querySelector('div.onOffSwitch');
 	let rainDiv = document.querySelector('div.rainDiv');
-		rainDiv.innerHTML = state.bits;
+	let arrow = document.querySelector('div.switchArrow');
+	rainDiv.innerHTML = state.bits;
 	let bitInterval = setInterval(toggleBits, 500);
 
-	divSwitch.addEventListener('click', flipSwitch);
+	divSwitch.addEventListener('click', flipSwitch); //onOffSwitch
+	divSwitch.addEventListener('click', arrowAnimate);
 	divSwitch.addEventListener('animationend',clearSwitch);
 
 	function flipSwitch() {
-
-
 		if (state.switchG == 'On') {
 			state.switchG = 'Off';
 			divSwitch.innerHTML = 'Off';
@@ -30,36 +30,42 @@
 		}
 	};
 
-	function clearSwitch(){
-
+	function clearSwitch() {
 		divSwitch.style.animation = 'none';
-
 		if (state.switchG === 'On'){
 			divSwitch.style.backgroundColor = '#33cc33';
-			divSwitch.style.left = '0%';
+			divSwitch.style.top = '0%';
 			divSwitch.innerHTML = 'On';
 			rainDiv.style.color = 'green';
 			//activate rain
 		} else if (state.switchG ===  'Off'){
-			divSwitch.style.backgroundColor = 'red';
-			divSwitch.style.left = '23%';
+			divSwitch.style.backgroundColor = '#660000';
+			divSwitch.style.top = '60%';
 			rainDiv.style.color = 'red';
 		}
+	};
 
+	function arrowAnimate() {
+		if (state.switchIsOn === true)	{
+			state.switchIsOn = false;
+				console.log('SWITCH ARROW IS OFF MODE');
+				arrow.style.animation = 'switchIsOff 1.8s infinite';
+		} else {
+			state.switchIsOn = true;
+				console.log('SWITCH ARROW IS ON MODE');
+				arrow.style.animation = 'switchIsOn 1.8s infinite';
+		}
 	};
 
 	function toggleBits(){
-
 		let x = Math.floor((Math.random() * 2) + 0);
 		let y = Math.floor((Math.random() * 2) + 0);
 		let z = Math.floor((Math.random() * 2) + 0);
 		let i = Math.floor((Math.random() * 2) + 0);
-
 		state.bits[0] = x;
 		state.bits[1] = y;
 		state.bits[2] = z;
 		state.bits[3] = i;
-
 		if (state.switchG === 'On'){
 			rainDiv.innerHTML = state.bits;
 		} else if (state.switchG ==='Off') {
@@ -76,7 +82,6 @@
 	function myFunction() {
 		let windowHeight = window.innerHeight;
 		let overlap = (1400 - windowHeight) - window.pageYOffset;
-
 		if (overlap <= 0) {
 			innerNav.classList.add("sticky");
 		} else {

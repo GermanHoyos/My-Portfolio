@@ -97,19 +97,21 @@
 	window.onscroll = function() {
 	let windowY = window.scrollY;
 		console.log(windowY);
-		if (windowY > 1){
-			header.style.animation = 'fadeOut 2s';
+		if (windowY >= 1){
+			header.style.animation = 'fadeOut 0.5s';
+			state.opacity = 1;
 		} else {
-			header.style.animation = 'fadeIn 2s';
+			header.style.animation = 'fadeIn 0.5s';
+			state.opacity = 0;
 		}
 	}
 
 	function opacitySet() {
-		if (state.opacity == 1){
+		if (state.opacity >= 1){
 			state.opacity = 0;
 			header.style.opacity = "0";
 		} else {
-			state.opacity = 1
+			state.opacity = 1;
 			header.style.opacity = "1";
 		}
 	}

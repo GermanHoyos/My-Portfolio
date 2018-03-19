@@ -36,6 +36,7 @@ header {
 
 footer{
 	background-color: black;
+	font-family: 'Bungee';
 	position: fixed;
 	bottom: 0px;
 	color: white;
@@ -43,6 +44,9 @@ footer{
 	width: 100%;
 	text-align: center;
 	min-width: 600px;
+	font-size: 15px;
+	color: #cccccc;
+	z-index: 2;
 }
 
 .begin {
@@ -99,6 +103,10 @@ ul {
 	color: #994f00;
 }
 
+li {
+	list-style-type: none;
+}
+
 /* MAIN CONTENT BELOW */
 
 #innerNav {
@@ -109,7 +117,7 @@ ul {
 	overflow: hidden;
 	height: 1300px;
 	width: 150px;
-	z-index: -1;
+	z-index: 1;
 	white-space: nowrap;
 	list-style-type: none;
 }
@@ -466,6 +474,30 @@ ul {
 	overflow: hidden;
 	font-size: 20px;
 }
+
+.eightA {
+	font-family: 'Montserrat';
+	border-radius: 5px;
+	background-color: #2a2d31;
+	color: white;
+	grid-column: 2/6;
+	grid-row: 31/35;
+	color: #cccccc;
+	min-width: 600px;
+}
+
+.centerTexteightA {
+	position: relative;
+	background-color: transparent;
+	border-radius: 5px;
+	top: 10%;
+	margin: auto;
+	height: 90%;
+	width: 90%;
+	overflow: hidden;
+	font-size: 20px;
+}
+
 /* ALL MEDIA QUERIES BELLOW */
 
 @media (max-width: 720px) {

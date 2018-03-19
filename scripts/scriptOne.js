@@ -79,11 +79,11 @@
 	};
 
 	let innerNav = document.getElementById('innerNav');
-
 	function myFunction() {
 		let windowHeight = window.innerHeight;
 		let overlap = (1400 - windowHeight) - window.pageYOffset;
-		console.log(bodyTop);
+		console.log("overlap" + overlap);
+
 		if (overlap <= 0) {
 			innerNav.classList.add("sticky");
 		} else {

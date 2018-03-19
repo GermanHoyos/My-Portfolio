@@ -2,11 +2,10 @@
 	let state = {
 		switchG: 'On',
 		switchIsOn: true,
+		opacity: 1,
 		bits: [0,0,0,0],
 		bitsOff: [0,0,0,0]
 	};
-
-	
 
 	let divSwitch = document.querySelector('div.onOffSwitch');
 	let rainDiv = document.querySelector('div.rainDiv');
@@ -84,6 +83,7 @@
 	function myFunction() {
 		let windowHeight = window.innerHeight;
 		let overlap = (1400 - windowHeight) - window.pageYOffset;
+		console.log(bodyTop);
 		if (overlap <= 0) {
 			innerNav.classList.add("sticky");
 		} else {
@@ -91,6 +91,28 @@
 		}
 	}
 
+	let header = document.querySelector('header');
+	header.addEventListener('animationend', opacitySet);
+
+	window.onscroll = function() {
+	let windowY = window.scrollY;
+		console.log(windowY);
+		if (windowY > 1){
+			header.style.animation = 'fadeOut 2s';
+		} else {
+			header.style.animation = 'fadeIn 2s';
+		}
+	}
+
+	function opacitySet() {
+		if (state.opacity == 1){
+			state.opacity = 0;
+			header.style.opacity = "0";
+		} else {
+			state.opacity = 1
+			header.style.opacity = "1";
+		}
+	}
 //______________________________________________________________________________
 //EVERYTHING BELOW THIS LINE IS EXPERIMENTAL CODE, UNTESTED OR DESIGNED TO TEST.
 /*

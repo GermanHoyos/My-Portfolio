@@ -24,6 +24,16 @@ header {
 	min-width: 600px;
 }
 
+@keyframes fadeOut {
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+@keyframes fadeIn {
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
 footer{
 	background-color: black;
 	position: fixed;
@@ -36,7 +46,7 @@ footer{
 }
 
 .begin {
-	background-color: lime;
+	background-color: transparent;
 	grid-column: 1/7;
 	grid-row: 1;
 }

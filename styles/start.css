@@ -465,7 +465,7 @@ li {
 
 .centerPenSevenA {
 	position: relative;
-	background-color: blue;
+	background-color: transparent;
 	border-radius: 5px;
 	top: 6%;
 	margin: auto;

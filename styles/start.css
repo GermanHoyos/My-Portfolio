@@ -115,7 +115,7 @@ li {
 	color: white;
 	left: 0px;
 	overflow: hidden;
-	height: 1300px;
+	height: 1080px;
 	width: 150px;
 	z-index: 1;
 	white-space: nowrap;
@@ -508,15 +508,17 @@ li {
 		font-size: 30px;
 	}
 
-	.wrapper {
+	#innerNav {
+		display: none;
+	}
+
+	/*.wrapper {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
 		grid-template-rows: repeat(22, 100px);
 	}
 
-	#innerNav {
-		display: none;
-	}
+
 
 	.oneA {
 		grid-column: 1/7;
@@ -552,5 +554,5 @@ li {
 	.sevenA {
 		grid-column: 1/7;
 		grid-row: 20/23;
-	}
-}/*
+	}*/
+}

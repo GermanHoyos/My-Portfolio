@@ -2,7 +2,8 @@
 	let state = {
 		switchG: 'On',
 		switchIsOn: true,
-		opacity: 1,
+		opacityH: 1,
+		opacityF: 1,
 		bits: [0,0,0,0],
 		bitsOff: [0,0,0,0]
 	};
@@ -10,9 +11,14 @@
 	let divSwitch = document.querySelector('div.onOffSwitch');
 	let rainDiv = document.querySelector('div.rainDiv');
 	let arrow = document.querySelector('div.switchArrow');
-	rainDiv.innerHTML = state.bits;
 	let bitInterval = setInterval(toggleBits, 500);
+	let innerNav = document.getElementById('innerNav');
+	let header = document.querySelector('header');
+	let footer = document.querySelector('footer');
 
+	header.addEventListener('animationend', opacitySetH);
+	footer.addEventListener('animationend', opacitySetF);
+	rainDiv.innerHTML = state.bits;
 	divSwitch.addEventListener('click', flipSwitch); //onOffSwitch
 	divSwitch.addEventListener('click', arrowAnimate);
 	divSwitch.addEventListener('animationend',clearSwitch);
@@ -38,7 +44,6 @@
 			divSwitch.style.top = '0%';
 			divSwitch.innerHTML = 'On';
 			rainDiv.style.color = 'green';
-			//activate rain
 		} else if (state.switchG ===  'Off'){
 			divSwitch.style.backgroundColor = '#660000';
 			divSwitch.style.top = '60%';
@@ -78,65 +83,51 @@
 		myFunction();
 	};
 
-	let innerNav = document.getElementById('innerNav');
 	function myFunction() {
 		let windowHeight = window.innerHeight;
-		let overlap = (1400 - windowHeight) - window.pageYOffset;
+		let overlap = (1180 - windowHeight) - window.pageYOffset;
+		let windowY = window.scrollY;
+		console.log(windowY);
 		console.log("overlap" + overlap);
-
 		if (overlap <= 0) {
 			innerNav.classList.add("sticky");
 		} else {
 			innerNav.classList.remove("sticky");
 		}
-	}
-
-	let header = document.querySelector('header');
-	header.addEventListener('animationend', opacitySet);
-
-	window.onscroll = function() {
-	let windowY = window.scrollY;
-		console.log(windowY);
 		if (windowY >= 1){
-			header.style.animation = 'fadeOut 0.5s';
-			state.opacity = 1;
+				header.style.animation = 'fadeOut 0.5s';
+				footer.style.animation = 'fadeOut 0.5s';
+				state.opacityH = 1;
+				state.opacityF = 1;
 		} else {
-			header.style.animation = 'fadeIn 0.5s';
-			state.opacity = 0;
+				header.style.animation = 'fadeIn 0.5s';
+				footer.style.animation = 'fadeIn 0.5s';
+				state.opacityH = 0;
+				state.opacityF = 0;
 		}
 	}
 
-	function opacitySet() {
-		if (state.opacity >= 1){
-			state.opacity = 0;
+	function opacitySetH() {
+		if (state.opacityH >= 1){
+			state.opacityH = 0;
 			header.style.opacity = "0";
+			header.style.zIndex = "0";
 		} else {
-			state.opacity = 1;
+			state.opacityH = 1;
 			header.style.opacity = "1";
+			header.style.zIndex= "2";
+
 		}
 	}
-//______________________________________________________________________________
-//EVERYTHING BELOW THIS LINE IS EXPERIMENTAL CODE, UNTESTED OR DESIGNED TO TEST.
-/*
-		testOne = one.offsetTop;
-		console.log(' page offset = ' + window.pageYOffset);
-		console.log(' windowHeight = ' + windowHeight);
-		console.log(' test ' + testOne);
-		console.log(' overlap ' + overlap);
-*/
-//FUNCTION - lockElement re-factored
 
-function locElement(element) {
-
-	const element = document.getElementById(element); //HTML element passed as argument
-
-	let windowHeight = window.innerHeight;
-	let elHeight = element.style.height;
-	let overlap = (elHeight - windowHeight) - window.pageYOffset;
-
-	if (overlap <= 0) {
-			one.classList.add("sticky")
+	function opacitySetF() {
+		if (state.opacityF >= 1){
+			state.opacityF = 0;
+			footer.style.opacity = "0";
+			footer.style.zIndex = "0";
 		} else {
-			one.classList.remove("sticky");
+			state.opacityF = 1;
+			footer.style.opacity = "1";
+			footer.style.zIndex= "2";
 		}
-}
+	}

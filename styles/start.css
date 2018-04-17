@@ -2,6 +2,7 @@ body {
 	background-color: black;
 	margin: 0px;
 	padding: 0px;
+	min-width: 720px;
 }
 
 
@@ -23,6 +24,7 @@ header {
 	z-index: 2;
 	overflow: hidden;
 	min-width: 600px;
+
 }
 
 @keyframes fadeOut {

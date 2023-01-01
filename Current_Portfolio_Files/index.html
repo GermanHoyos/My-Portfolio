@@ -1,0 +1,78 @@
+<!--
+	01011001 01101111 01110101 01110010 00100000 01110011 01111001
+	01110011 01110100 01100101 01101101 00100000 01101000 01100001
+	01110011 00100000 01100010 01100101 01100101 01101110 00100000
+	01110011 01100011 01100001 01101110 01101110 01100101 01100100
+	00101110 00100000 01001001 01100110 00100000 01100001 00100000
+	01110100 01101000 01110010 01100101 01100001 01110100 00100000
+	01101001 01110011 00100000 01100110 01101111 01110101 01101110
+	01100100 00101100 00100000 01111001 01101111 01110101 01110010
+	00100000 01110011 01111001 01110011 01110100 01100101 01101101
+	00100000 01110111 01101001 01101100 01101100 00100000 01100010
+	01100101 00100000 01101110 01100101 01110101 01110100 01110010
+	01100001 01101100 01101001 01111010 01100101 01100100 00101110
+	Coded By: German Hoyos
+	Email: Hoyos.A.German@gmail.com
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Website</title>
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press Start 2P" >
+</head>
+<body>
+	<h1>German Hoyos</h1>
+	<h3>Software Dev</h3>
+        
+        <!-- section1 -->
+        <div class="section" id="canvasContainer">
+            <canvas id="showCase"></canvas>
+        </div>
+
+        <!-- section2 -->
+        <div class="parent" id="buttonsForCanvas">
+            <div id="buttonFrame">
+                <div class="child" id="leftB" onclick="refreshGridLeft()">
+                    <img src="arrow-left-square.svg">
+                </div>
+                <div class="child" id="centerDisplay">
+                    Bubble Sort
+                </div> 
+                <div class="child" id="rightB" onclick="refreshGridRight()">
+                    <img src="arrow-right-square.svg">
+                </div>
+            </div>
+        </div>
+
+        <!-- section3 (education)-->
+        <div class="section" id="spacer1">
+            
+        </div>
+
+        <!-- section4 (projects)-->
+        <div class="section" id="section3">
+            
+        </div>
+
+        <!-- section5 (contact)-->
+        <div class="section" id="spacer2">
+    
+        </div>
+
+        <!-- section4 (projects)-->
+        <div class="section" id="section4">
+    
+        </div>
+
+    <script src="script.js"></script>
+	<script src="objects.js"></script>
+	<script src="interaction.js"></script>
+	<script src="finalCallLoop.js"></script>
+
+</body>
+</html>

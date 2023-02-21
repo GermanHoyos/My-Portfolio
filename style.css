@@ -43,7 +43,8 @@ body {
 }
 
 .header {
-    background-color: #343a40;
+    background-color: transparent;
+    position: relative;
     overflow: hidden;
     max-width: 400px;
     min-width: 400px;
@@ -62,9 +63,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    border-radius: 5px;
 
 }
 
@@ -86,29 +87,82 @@ body {
     top: 6px;
     left: 6px;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     border-radius: 5px;
 }
-.projDescription {
+
+#language_icon {
     background-color: transparent;
-    font-size: 10px;
-    position: relative;
-    top: -5px;
-    left: 50px;
+    position: absolute;
+    overflow: hidden;
+    width: 80px;
+    height: 50px;
+    top: 0px;
+    left: 0px;
 }
 
-.projDescription2 {
+#proj_description {
     background-color: transparent;
-    font-size: 10px;
-    position: relative;
-    top: -20px;
-    left: 50px;
+    position: absolute;
+    overflow: hidden;
+    width: 220px;
+    height: 40px;
+    top: 10px;
+    left: 55px;
+    color: white;
+    text-align: left;
+    font-size: small;
 }
 
-.projDescription3 {
-    background-color: transparent;
-    font-size: 10px;
+#git_hub_link {
+    background-color: greenyellow;
+    position: absolute;
+    overflow: hidden;
+    width: 115px;
+    height: 30px;
+    top: 5px;
+    left: 285px;
+    font-size: x-small;
+    border-radius: 5px;
+    color: black;
+}
+
+#codepen_link {
+    background-color: #cc0099;
+    position: absolute;
+    overflow: hidden;
+    width: 115px;
+    height: 30px;
+    top: 5px;
+    left: 285px;
+    font-size: x-small;
+    border-radius: 5px;
+    color: black;
+}
+
+.logo_placement {
     position: relative;
-    top: -10px;
-    left: 40px;
+    top: 2px;
+    left: 3px;
+    
+}
+
+.lang_placementJS {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    height:max-content;
+    width:max-content;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: whitesmoke;
+}
+
+.lang_placementC {
+    position: relative;
+    top: 6px;
+    left: 3px;
+    height:max-content;
+    width:max-content;
+
 }

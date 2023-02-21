@@ -57,6 +57,7 @@ body {
 
 .article {
     background-color: #343a40;
+    position: relative;
     overflow: hidden;
     max-width: 400px;
     min-width: 400px;
@@ -66,6 +67,21 @@ body {
     /* border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; */
     border-radius: 5px;
+}
+
+.article_custom {
+    background-color: #343a40;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    border-radius: 5px;
+    animation: backGroundShift 10s infinite;
 
 }
 
@@ -107,7 +123,7 @@ body {
     overflow: hidden;
     width: 220px;
     height: 40px;
-    top: 10px;
+    top: 5px;
     left: 55px;
     color: white;
     text-align: left;
@@ -164,5 +180,135 @@ body {
     left: 3px;
     height:max-content;
     width:max-content;
+}
+
+/* 731 x 670 */
+/* 183 x 138 */
+#slide_a {
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 150px;
+    width: 138px;
+    
+    border-radius: 5px;
+}
+
+#slide_b {
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 138px;
+    height: 150px;
+    width: 262px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: opacityOn 40s infinite;    
+}
+
+#slide_c {
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 138px;
+    height: 150px;
+    width: 262px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: opacityOff 40s infinite;    
 
 }
+
+#slide_d {
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 150px;
+    width: 138px;
+    
+    border-radius: 5px;
+}
+
+#slide_e {
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 138px;
+    height: 150px;
+    width: 262px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: opacityOn 40s infinite;    
+}
+
+#slide_f {
+    background-color: transparent;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 138px;
+    height: 150px;
+    width: 262px;
+    border-radius: 5px;
+    opacity: 0;
+    animation: opacityOff 40s infinite;    
+
+}
+
+@keyframes opacityOn {
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+
+}
+
+@keyframes opacityOff {
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes backGroundShift {
+    0%{background-color: #343a40;}
+    50%{background-color: transparent;}
+    100%{background-color: #343a40;}
+}
+/* ************************TEST************************************ */
+#centerDiv {
+    position: absolute;
+    background-color: transparent;
+    top: -23px;
+    left: 95px;
+    height:200px;
+    width: 200px;
+    /* transform: translate(-50%, -50%); */
+    transform: scale(0.7);
+  }
+  
+  .frameWork {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 24px);
+    grid-template-rows: repeat(7, 24px);
+    grid-gap: 4px;
+  }
+  
+  .frameWork div {
+    border: 8px solid transparent;
+    border-radius: 4px;
+    background-color: white;
+  }
+  
+  @keyframes pulse {
+    0% { border: solid white; opacity:1; background-color: white; }
+    15% { border: solid red; opacity:0.8;}
+    50% { background-color: white;}
+    100% { border: solid red; opacity:0; background-color: white; }
+  }
+  

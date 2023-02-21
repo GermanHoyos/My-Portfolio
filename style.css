@@ -174,6 +174,15 @@ body {
     border-color: whitesmoke;
 }
 
+.lang_placementXAM {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    height:max-content;
+    width:max-content;
+
+}
+
 .lang_placementC {
     position: relative;
     top: 6px;
@@ -259,14 +268,12 @@ body {
     border-radius: 5px;
     opacity: 0;
     animation: opacityOff 40s infinite;    
-
 }
 
 @keyframes opacityOn {
     0%{opacity: 0;}
     50%{opacity: 1;}
     100%{opacity: 0;}
-
 }
 
 @keyframes opacityOff {
@@ -280,6 +287,7 @@ body {
     50%{background-color: transparent;}
     100%{background-color: #343a40;}
 }
+
 /* ************************TEST************************************ */
 #centerDiv {
     position: absolute;
@@ -290,25 +298,58 @@ body {
     width: 200px;
     /* transform: translate(-50%, -50%); */
     transform: scale(0.7);
-  }
-  
-  .frameWork {
+}
+
+.frameWork {
     display: grid;
     grid-template-columns: repeat(auto-fill, 24px);
     grid-template-rows: repeat(7, 24px);
     grid-gap: 4px;
-  }
-  
-  .frameWork div {
+}
+
+.frameWork div {
     border: 8px solid transparent;
     border-radius: 4px;
     background-color: white;
-  }
-  
-  @keyframes pulse {
+}
+
+@keyframes pulse {
     0% { border: solid white; opacity:1; background-color: white; }
     15% { border: solid red; opacity:0.8;}
     50% { background-color: white;}
     100% { border: solid red; opacity:0; background-color: white; }
-  }
+}
   
+
+/* top left */
+#l1 {
+    background-color: #c6b7be;
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    top: 5px;
+    left: 2px;
+    opacity: 0.5;
+    z-index: -1;
+}
+#l2 {
+    background-color: #c6b7be;
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    top: 15px;
+    left: 2px;
+    opacity: 0.5;
+    z-index: -1;
+}
+#l3 {
+    background-color: #c6b7be;
+    position: fixed;
+    height: 5px;
+    width: 5px;
+    top: 25px;
+    left: 2px;
+    opacity: 0.5;
+    z-index: -1;
+}
+

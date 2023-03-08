@@ -8,8 +8,9 @@
 
 
 body {
-    background-color: #212529;
-    color: white;
+    background-color: #565a75;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%233c405d' fill-opacity='0.17'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -17,6 +18,16 @@ body {
     font-family: 'Press Start 2P';
     font-size: 14px;
 }
+
+h1 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+
+
+
 
 .button {
     background-color: #343a40;
@@ -383,9 +394,9 @@ footer {
 
 #backCanvas {
     position: absolute;
-    background-color: #212529;
+    background-color: black;
     overflow: hidden;
     top: 0px;
     left: 0px;
-    z-index: -1;
+    z-index: -2;
 }

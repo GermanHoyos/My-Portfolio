@@ -37,25 +37,25 @@ setInterval(
               //------------------------------------
               if ((d == 0 && (x + 1) < 50) && (x + 1 != 8 && x + 1 != 15 && x + 1 != 22 && x + 1 != 29 && x + 1 != 36 && x + 1 != 43)) { //direction instructed = right
                   x = x + 1; //right
-                  console.log('x = '+ x + ' right'); // (x + 1) != (8||15||22||29||36||43)
+                  //console.log('x = '+ x + ' right'); // (x + 1) != (8||15||22||29||36||43)
               }
 
               //------------------------------------
               if ((d == 1 && (x - 1) > 0) && (x - 1 != 42 && x - 1 != 35 && x - 1 != 28 && x - 1 != 21 && x - 1 != 14 && x - 1 != 7)){ //direction instructed = left
                   x = x - 1; //left
-                  console.log('x = '+ x + ' left'); // (x - 1) != (42||35||28||21||14||7)
+                  //console.log('x = '+ x + ' left'); // (x - 1) != (42||35||28||21||14||7)
               }
 
               //------------------------------------
               if (d == 2 && (x - 7) > 0)  { //direction instructed = up
                 x = x - 7; //up
-                  console.log('X = ' + x + ' up');
+                  //console.log('x = ' + x + ' up');
               }
 
               //------------------------------------
               if (d == 3 && (x + 7) < 50) { //direction instructed = down
                 x = x + 7; //down
-                  console.log('X = ' + x + ' down');
+                  //console.log('x = ' + x + ' down');
               }
         }
 
@@ -68,3 +68,55 @@ setInterval(
       }
   }, 48
 );
+
+//---- canvas code
+var canvas = document.querySelector("canvas");
+var c = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+
+
+class sparkle {
+  constructor (x,y,width,height) {
+    this.x = x;
+    this.y = y;
+    this.width = width;
+    this.height = height;
+  }
+  sparkleRender() {
+    c.fillStyle = "transparent";
+    c.fillRect(this.x,this.y,this.width,this.width);
+
+  }
+  movement(){
+    if(this.x < window.innerWidth){
+      this.x++;
+    }
+     
+  }
+  draw() {
+    this.sparkleRender();
+    this.movement();
+    
+  }
+}
+
+//instantiate sparkle
+var spark1 = new sparkle(0,0,20,20);
+
+
+
+function drawIf() {
+  spark1.draw();
+}
+
+
+function animate() {
+  requestAnimationFrame(animate);
+  c.clearRect(0, 0, innerWidth, innerHeight);
+  drawIf();
+
+}
+
+animate();

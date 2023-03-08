@@ -381,3 +381,11 @@ footer {
     z-index: -1;
 }
 
+#backCanvas {
+    position: absolute;
+    background-color: #212529;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}

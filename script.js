@@ -1,5 +1,14 @@
 console.log("Script Found");
 
+function warning(){
+    if(confirm("Are you sure you want to go to this link?\nYou are leaving a mobile friendly page for an\nexperimental desktop version only page.")) {
+        window.location = "./miniLib/game.html";
+    } else {
+        window.location = "index.html";
+    }
+}
+
+
 function startCSSAnimations() {
     document.getElementById("slide_b").style.animation = 'opacityOn 10s 1';
 }

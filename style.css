@@ -4,7 +4,7 @@
     --gb2: #565a75;
     --gb3: #c6b7be;
     --gb4: #fafbf6;
-    --gb5: #bab8dd; /*#444265*/
+    --gb5: #bab8dd; /*#bab8dd*/
 }
 
 
@@ -24,25 +24,25 @@ body {
 
 h1 {
     color: white;
-    text-shadow: -3px 3px black;
+    text-shadow: -1px 5px black;
 }
 h3 {
     color: white;
-    text-shadow: -3px 3px black;
+    text-shadow: -1px 5px black;
 }
 
 
 
 
 .button {
-    background-color: #646880;
+    background-color: transparent;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+   
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
@@ -50,8 +50,9 @@ h3 {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-bottom: solid 3px var(--gb5);
-    border-left: solid 3px var(--gb5);
+    border-bottom: solid 3px transparent;
+    border-left: solid 3px transparent;
+    text-shadow: -1px 5px black;
 }
   
 

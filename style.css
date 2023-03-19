@@ -4,15 +4,15 @@
     --gb2: #565a75;
     --gb3: #c6b7be;
     --gb4: #fafbf6;
-    --gb5: #444265; 
+    --gb5: #bab8dd; /*#444265*/
 }
 
 
 body {
 
 
-    background-color: #70707b;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%233c405d' fill-opacity='0.17'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-color: #343039;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23cdbfe2' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     
     margin: 0px;
     padding: 0px;
@@ -35,7 +35,7 @@ h3 {
 
 
 .button {
-    background-color: #343a40;
+    background-color: #646880;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -46,7 +46,14 @@ h3 {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
-  }
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: solid 3px var(--gb5);
+    border-left: solid 3px var(--gb5);
+}
+  
 
 .last_spacer{
     background-color: transparent;
@@ -87,7 +94,7 @@ footer {
 }
 
 .header {
-    background-color: #262a44; /*#343a40*/
+    background-color: #646880; /*#343a40*/
     position: relative;
     overflow: hidden;
     max-width: 400px;
@@ -103,7 +110,7 @@ footer {
 
 
 
-    border-left: solid 5px var(--gb5);
+    border-left: solid 3px var(--gb5);
 
 }
 
@@ -118,8 +125,8 @@ footer {
     text-align: left;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-bottom: solid 5px var(--gb5);
-    border-left: solid 5px var(--gb5);
+    border-bottom: solid 3px var(--gb5);
+    border-left: solid 3px var(--gb5);
 }
 
 .article_custom {
@@ -133,8 +140,8 @@ footer {
     text-align: left;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-bottom: solid 5px var(--gb5);
-    border-left: solid 5px var(--gb5);
+    border-bottom: solid 3px var(--gb5);
+    border-left: solid 3px var(--gb5);
 
     /* border-radius: 5px; */
     /* animation: backGroundShift 10s infinite; */

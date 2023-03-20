@@ -379,14 +379,14 @@ footer {
 .frameWork div {
     border: 8px solid transparent;
     border-radius: 4px;
-    background-color: white;
+    background-color: black;
 }
 
 @keyframes pulse {
-    0% { border: solid white; opacity:1; background-color: white; }
+    0% { border: solid black; opacity:1; background-color: black; }
     15% { border: solid #d900a3; opacity:0.8;}
-    50% { background-color: white;}
-    100% { border: solid #d900a3; opacity:0; background-color: white; }
+    50% { background-color: black;}
+    100% { border: solid #d900a3; opacity:0; background-color: black; }
 }
   
 

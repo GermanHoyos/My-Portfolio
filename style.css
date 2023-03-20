@@ -107,10 +107,11 @@ footer {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    
 
 
 
-
+    /* border-top:solid 3px black; */
     border-left: solid 3px var(--gb5);
 
 }
@@ -201,10 +202,11 @@ footer {
     width: 115px;
     height: 30px;
     top: 5px;
-    left: 282px;
+    left: 280px;
     font-size: x-small;
     border-radius: 5px;
     color: black;
+    border: 2px solid black;
 }
 
 #codepen_link {
@@ -214,10 +216,11 @@ footer {
     width: 115px;
     height: 30px;
     top: 5px;
-    left: 282px;
+    left: 280px;
     font-size: x-small;
     border-radius: 5px;
     color: black;
+    border: 2px solid black;
 }
 
 .logo_placement {

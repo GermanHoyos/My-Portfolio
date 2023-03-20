@@ -107,6 +107,7 @@ footer {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    text-shadow: 0 0 5px black, 0 0 5px black;
     
 
 
@@ -132,7 +133,7 @@ footer {
 }
 
 .article_custom {
-    background-color: #343a40;
+    background-color: #646880;
     position: relative;
     overflow: hidden;
     max-width: 400px;
@@ -196,7 +197,7 @@ footer {
 }
 
 #git_hub_link {
-    background-color: rgb(127, 211, 0);
+    background-color: #d900a3;
     position: absolute;
     overflow: hidden;
     width: 115px;
@@ -207,6 +208,7 @@ footer {
     border-radius: 5px;
     color: black;
     border: 2px solid black;
+    text-shadow: none;
 }
 
 #codepen_link {
@@ -221,13 +223,13 @@ footer {
     border-radius: 5px;
     color: black;
     border: 2px solid black;
+    text-shadow: none;
 }
 
 .logo_placement {
     position: relative;
     top: 2px;
-    left: 3px;
-    
+    left: 3px; 
 }
 
 .lang_placementJS {
@@ -382,9 +384,9 @@ footer {
 
 @keyframes pulse {
     0% { border: solid white; opacity:1; background-color: white; }
-    15% { border: solid red; opacity:0.8;}
+    15% { border: solid #d900a3; opacity:0.8;}
     50% { background-color: white;}
-    100% { border: solid red; opacity:0; background-color: white; }
+    100% { border: solid #d900a3; opacity:0; background-color: white; }
 }
   
 

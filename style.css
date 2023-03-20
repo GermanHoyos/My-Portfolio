@@ -281,8 +281,8 @@ footer {
     height: 150px;
     width: 262px;
     border-radius: 0px;
-    opacity: 0;
-    animation: opacityOn 40s infinite;    
+    opacity: 1;
+    /* animation: opacityOn 40s infinite;     */
 }
 
 #slide_c {
@@ -295,7 +295,7 @@ footer {
     width: 262px;
     border-radius: 0px;
     opacity: 0;
-    animation: opacityOff 40s infinite;    
+    /* animation: opacityOff 40s infinite;     */
 
 }
 

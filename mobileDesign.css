@@ -1,0 +1,121 @@
+:root {
+    --gb0: "tranparent";
+    --gb1: #0f0f1b;
+    --gb2: #565a75;
+    --gb3: #c6b7be;
+    --gb4: #fafbf6;
+    --gb5: #bab8dd; /*#bab8dd*/
+}
+
+/* var(--gb5) */
+
+/* 
+    For screens with a width less than 600px:
+*/
+
+@media (max-width: 600px) {
+ 
+    .project_1 {
+        grid-column: 1 / 11;
+        grid-row: 3 / 10;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+
+    .project_2 {
+        grid-column: 1 / 11; 
+        grid-row: 12 / 19;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+
+    .project_3 {
+        grid-column: 1 / 11; /* start at 2 end at 10 */
+        grid-row: 21 / 28;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+    
+    .project_4 {
+        grid-column: 1 / 11; /* start at 2 end at 10 */
+        grid-row: 30 / 37;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+    
+    .project_5 {
+        grid-column: 1 / 11; /* start at 2 end at 10 */
+        grid-row: 39 / 46;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+    
+    .project_6 {
+        grid-column: 1 / 11; /* start at 2 end at 10 */
+        grid-row: 48 / 55;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+
+
+}
+
+/* 
+    For screens with a width greater than 1000px:
+*/
+
+@media (min-width: 2100px) {
+    .project_1 {
+        grid-column: 3 / 9;
+        grid-row: 3 / 10;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+
+    .project_2 {
+        grid-column: 3 / 9; 
+        grid-row: 12 / 19;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+
+    .project_3 {
+        grid-column: 3 / 9; /* start at 2 end at 10 */
+        grid-row: 21 / 28;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+    
+    .project_4 {
+        grid-column: 3 / 9; /* start at 2 end at 10 */
+        grid-row: 30 / 37;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+    
+    .project_5 {
+        grid-column: 3 / 9; /* start at 2 end at 10 */
+        grid-row: 39 / 46;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+    
+    .project_6 {
+        grid-column: 3 / 9; /* start at 2 end at 10 */
+        grid-row: 48 / 55;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+}

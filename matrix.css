@@ -1,0 +1,32 @@
+#centerDiv {
+    position: absolute;
+    background-color: transparent;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width: 100%;
+    /* transform: translate(-50%, -50%); */
+    transform: scale(1);
+    max-width: 640px;
+}
+
+.frameWork {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 35px);
+    grid-gap: 4px;
+    background-color: transparent;
+}
+
+.frameWork div {
+    border: 8px solid transparent;
+    border-radius: 4px;
+    background-color: black;
+}
+
+@keyframes pulse {
+    0% { border: solid black; opacity:1; background-color: black; }
+    15% { border: solid #00ccff; opacity:0.8;}
+    50% { background-color: rgb(116, 62, 191);}
+    100% { border: solid #00ccff; opacity:0; background-color: black; }
+}

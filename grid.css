@@ -1,0 +1,48 @@
+html, body { /* html is key in getting the grid to verticaly exapnd 100% */
+	background-color: #1f1f2e;
+	margin: 0px;
+	padding: 0px;
+    border: 0px;
+	color: white;
+	/* height: 100%;  */ /* this can be used to lock a grid to inner width / height */
+    font-family: 'Press Start 2P';
+}
+
+.header_1 {
+    grid-column: 1 / 11;
+    grid-row: 1 / 2;
+    background-color: transparent;
+    text-align: center;
+    font-size: 35px;
+}
+
+.header_2 {
+    grid-column: 1 / 11;
+    grid-row: 2 / 3;
+    background-color: transparent;
+    text-align: center;
+    font-size: 20px;
+}
+
+body {
+	/* overflow-y: hidden; */
+}
+
+
+.outerMostGrid {
+	display: grid;
+	/*height: calc(100% - 1px);*/ /* this can be used to lock a grids inner width / height */
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(56, 50px);
+}
+
+div.outerMostGrid > * {
+	border-style: solid;
+	border-radius: 1px; /* if this value then change it in the "outerMostGird" as well */
+	/* border-color: rgb(22, 141, 226); */
+    border-color: transparent;
+    /* overflow: hidden; */
+    white-space: nowrap;
+}
+
+

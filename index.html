@@ -1,226 +1,276 @@
-<!--
-	Coded With Love By: German Hoyos
-	Email: Hoyos.A.German@gmail.com
-	Jesus is My Lord
+<!-- 
+	My Lord and Saviour: Jesus Christ
+	Software Engineer: German Adrian Hoyos
 -->
-<!-- Shout Out To Hero Patterns! -->
+
+<!-- 
+	CSS grid is in fractional units evenly distributed
+	based on innerWidth and innerHeight window sizes
+-->
+
+<!-- 
+	[ 1] [ 2] [ 3] [ 4] [ 5] [ 6] [ 7] [ 8] [ 9] [10]
+	[11] [12] [13] [14] [15] [16] [17] [18] [19] [20]
+	[21] [22] [23] [24] [25] [26] [27] [28] [29] [30]
+	[31] [32] [33] [34] [35] [36] [37] [38] [39] [40]
+	[41] [42] [43] [44] [45] [46] [47] [48] [49] [50]
+	[51] [51] [53] [54] [55] [56] [57] [58] [59] [60]
+	[61] [62] [63] [64] [65] [66] [67] [68] [69] [70]
+	[71] [72] [73] [74] [75] [76] [77] [78] [79] [80]
+	[81] [82] [83] [84] [85] [86] [87] [88] [89] [90]
+	[91] [92] [93] [94] [95] [96] [97] [98] [99] [100]
+	...
+	......
+	continues to [56] rows by [10] columns
+-->
+
+<!-- 
+	Layout uses 3 media queries for various screen sizes
+	Layout is completely custom - no downloaded templates
+-->
 
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=0.9">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>My Website</title>
-		<link rel="stylesheet" href="./style.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press Start 2P">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Adrians Code</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press Start 2P">
+  <link href="grid.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="matrix.css" rel="stylesheet">
+  <link href="mobileDesign.css" rel="stylesheet">
+  <script src="script.js"></script>
+  <script src="matrixPaths.js"></script>
 </head>
 
 <body>
-	<h1>German Hoyos</h1>
-	<h3>Software Eng</h3>
+
+<div class="outerMostGrid">
+
+	<!-- The first and last grid in the matrix -->
+	<!-- For testing purposes only -->
+	<div class="_1">
+		<!-- X: 0px<br>
+		Y: 0px -->
+	</div>
+	<div class="_100">
+
+	</div>
+
+	<!-- The following are visable by default -->
+	<!-- Header -->
+	<div class="header_1">
+		German Hoyos
+	</div>
+
+	<div class="header_2">
+		Software Engineer
+	</div>
+
+	<!-- Main content -->
 
 	<!-- row1 *************************************************************** -->
 	<!-- row1 *************************************************************** -->
-		<div class="row1">
-			<div class="header">
-				<div id="language_icon">
-					<div class="lang_placementJS">
-						<img src="javaScript.png" width="40" height="40">
-					</div>
-				</div>
-				<div id="proj_description">
-					Asteroids Particle Physics Experiment
-				</div>
-				<a href="https://codepen.io/hoyos/pen/xxLVZWM">
-					<div id="codepen_link">
-						<div class="logo_placement">
-							<img src="codepen-icon.svg" width="25" height="25"> Codepen
-						</div>
-					</div>
-				</a>
+	<div class="project_1">
+		<div class="topLeft">
+			<div class="logoPosition">
+				<img src="/assets/javaScript.png" width="100" height="100">
 			</div>
-			<div class="article">
-				<img src="inlarged.gif" width="400" height="150"> Codepen
+			
+		</div>
+
+		<a href="https://codepen.io/hoyos/pen/xxLVZWM">
+		<div class="bottomLeft">
+			<div class="linkPosition">
+				<img src="/assets/link.svg" width="100" height="100">
+				<div class="examine">
+					Examine Code
+				</div>
 			</div>
 		</div>
-	<!-- row1 *************************************************************** -->
-	<!-- row1 *************************************************************** -->
+		</a>
 
-	<div class="spacer"></div>
-
-	<!-- row2 *************************************************************** -->
-	<!-- row2 *************************************************************** -->
-	<div class="row1">
-		<div class="header">
-			<div id="language_icon">
-				<div class="lang_placementC">
-					<img src="cSharpCropped.png" width="40" height="40">
-				</div>
-			</div>
-			<div id="proj_description">
-				Customer Relationship Manager
-			</div>
-			<a href="https://github.com/GermanHoyos/Customer-Relationship-Manager">
-				<div id="git_hub_link">
-					<div class="logo_placement">
-						<img src="git.svg" width="25" height="25"> GitHub
-					</div>
-				</div>
-			</a>
-		</div>
-		
-		<div class="article">
-			<div id="slide_a">
-				<img src="AppFaceResized.png" width="100%" height="100%">
-			</div>
-			<div id="slide_b">
-				<img src="calenderSort.png" width="100%" height="100%">
-			</div>
-			<div id="slide_c">
-				<img src="erd.png" width="100%" height="100%">
-			</div>
+		<div class="fullRight">
+			<div class="projTitle">Vanilla JS:<br> Asteroids Particle <br>Physics Experiment</div>
+			<div class="projImgPosition">
+				<img src="/assets/cropped.gif" loading="lazy">
+			</div>	
 		</div>
 	</div>
-	<!-- row2 *************************************************************** -->
-	<!-- row2 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
 
-	<div class="spacer"></div>
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+	<div class="project_2">
+		<div class="topLeft">
+			<div class="logoPosition">
+				<img src="/assets/javaScript.png" width="100" height="100">
+			</div>
+			
+		</div>
 
-	<!-- row3 *************************************************************** -->
-	<!-- row3 *************************************************************** -->
-	<div class="row1">
-		<div class="header">
-			<div id="language_icon">
-				<div class="lang_placementC">
-					<img src="cPlusPlus.png" width="40" height="40">
+		<a href="https://codepen.io/hoyos/pen/MxpZJL">
+		<div class="bottomLeft">
+			<div class="linkPosition">
+				<img src="/assets/link.svg" width="100" height="100">
+				<div class="examine">
+					Examine Code
+				</div>
+			</div>
+		</div>
+		</a>
+
+		<div class="fullRight">
+			<div class="projTitle">Vanilla JS:<br> Algorithm for Random<br>Path Traverse</div>
+			<div class="projImgPosition">
+				<div id="centerDiv">
+					<div class="frameWork">
+					  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+					  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+					  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+					  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+					  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+					  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+					  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+					</div>
+				  </div>
+			</div>	
+		</div>
+	</div>
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+	<div class="project_3">
+		<div class="topLeft">
+			<div class="logoPosition">
+				<img src="/assets/cPlusPlus.png" width="100" height="100">
+			</div>
+			
+		</div>
+
+		<a href="https://github.com/GermanHoyos/Class-Roster-Manager-Console-Application">
+		<div class="bottomLeft">
+			<div class="linkPosition">
+				<img src="/assets/link.svg" width="100" height="100">
+				<div class="examine">
+					Examine Code
+				</div>
+			</div>
+		</div>
+		</a>
+
+		<div class="fullRight">
+			<div class="projTitle">C++:<br> Class Roster Console<br>Manager Application</div>
+			<div class="projImgPosition">
+				<img src="/assets/cPlusPlusRoster.png" loading="lazy">
+			</div>	
+		</div>
+	</div>
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+	<div class="project_4">
+		
+		<div class="topLeft">
+			<div class="logoPosition">
+				<img src="/assets/cSharpCropped.png" width="100" height="100">
+			</div>
+			
+		</div>
+
+		<a href="https://github.com/GermanHoyos/Customer-Relationship-Manager">
+		<div class="bottomLeft">
+			<div class="linkPosition">
+				<img src="/assets/link.svg" width="100" height="100">
+				<div class="examine">
+					Examine Code<br>
+
+				</div>
+			</div>
+		</div>
+		</a>
+
+		<div class="fullRight">
+			<div class="projTitle">C Sharp:<br> Customer Relationship<br>Manager Application</div>
+			<div class="projImgPosition">
+				<img src="/assets/cSharpCRM.png" loading="lazy">
+			</div>	
+		</div>
+	</div>
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+	<div class="project_5">
+		<div class="topLeft">
+			<div class="logoPosition">
+				<img src="/assets/xamFinal.png" width="100" height="100">
+			</div>
+			
+		</div>
+
+		<a href="https://github.com/GermanHoyos/Xamarin-Android-Mobile-Application">
+		<div class="bottomLeft">
+			<div class="linkPosition">
+				<img src="/assets/link.svg" width="100" height="100">
+				<div class="examine">
+					Examine Code
+				</div>
+			</div>
+		</div>
+		</a>
+
+		<div class="fullRight">
+			<div class="projTitle">Xamerin:<br> .NET School Semester<br>Mobile App Experiment</div>
+			<div class="projImgPosition">
+				<img src="/assets/xamSemesterTracker.png" loading="lazy">
+			</div>	
+		</div>
+	</div>
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+	<div class="project_6">
+		<div class="topLeft">
+			<div class="logoPosition">
+				<img src="/assets/angularLogo.png" width="100" height="100">
+			</div>
+			
+		</div>
+		<div class="bottomLeft">
+			<div class="linkPosition">
+				<img src="/assets/link.svg" width="100" height="100">
+				<div class="examine">
+					Examine Code
 				</div>
 			</div>
 			
-			<div id="proj_description">
-				Class Roster Manager Console Application
-			</div>
-			<a href="https://github.com/GermanHoyos/Class-Roster-Manager-Console-Application">
-				<div id="git_hub_link">
-					<div class="logo_placement">
-						<img src="git.svg" width="25" height="25"> GitHub
-					</div>
-				</div>
-			</a>
+			
 		</div>
-		<div class="article">
-			<div id="slide_d">
-				<img src="rosterFace.png" width="100%" height="100%">
-			</div>
-			<div id="slide_e">
-				<img src="Roster1.png" width="100%" height="100%">
-			</div>
-			<div id="slide_f">
-				<img src="Roster2.PNG" width="100%" height="100%">
-			</div>			
+		<div class="fullRight">
+			<div class="projTitle">AngularJS:<br>API Connected Pokemon<br>Gallery App Experiment</div>
+			<div class="projImgPosition">
+				<img src="/assets/angularPokemonGallery.PNG" loading="lazy">
+			</div>	
 		</div>
 	</div>
-	<!-- row3 *************************************************************** -->
-	<!-- row3 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
+	<!-- row1 *************************************************************** -->
 
-	<div class="spacer"></div>
+</div>
 
-	<!-- row4 *************************************************************** -->
-	<!-- row4 *************************************************************** -->
-	<div class="row1">
-		<div class="header">
-			<div id="language_icon">
-				<div class="lang_placementJS">
-					<img src="javaScript.png" width="40" height="40">
-				</div>
-				
-			</div>
-			<div id="proj_description">
-				Algorithm For Random Path Generation
-			</div>
-			<a href="https://codepen.io/hoyos/pen/MxpZJL">
-			<div id="codepen_link">
-				<div class="logo_placement">
-					<img src="codepen-icon.svg" width="25" height="25"> Codepen
-				</div>
-			</div>
-			</a>
-		</div>
-		<div class="article_custom">
-			<div id="centerDiv">
-				<div class="frameWork">
-				  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-				  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-				  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-				  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-				  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-				  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-				  <div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-				</div>
-			  </div>
-		</div>
-	</div>
-	<!-- row4 *************************************************************** -->
-	<!-- row4 *************************************************************** -->
-
-	<div class="spacer"></div>
-
-	<!-- row5 *************************************************************** -->
-	<!-- row5 *************************************************************** -->
-	<div class="row1">
-		<div class="header">
-			<div id="language_icon">
-				<div class="lang_placementXAM">
-					<img src="xamFinal.png" width="40" height="40">
-				</div>
-				
-			</div>
-			<div id="proj_description">
-				Xamarin Andriod Mobile Application 
-			</div>
-			<a href="https://github.com/GermanHoyos/Xamarin-Android-Mobile-Application">
-				<div id="git_hub_link">
-					<div class="logo_placement">
-						<img src="git.svg" width="25" height="25"> GitHub
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="article">
-			<div id="slide_a">
-				<img src="xamFace.png" width="100%" height="100%">
-			</div>
-			<div id="slide_b">
-				<img src="Xam1.PNG" width="100%" height="100%">
-			</div>
-			<div id="slide_c">
-				<img src="Xam2.PNG" width="100%" height="100%">
-			</div>			
-		</div>
-	</div>
-	<!-- row5 *************************************************************** -->
-	<!-- row5 *************************************************************** -->
-
-	<div class="spacer"></div>
-
-	<!-- top left -->
-	<!-- <a href="./miniLib/game.html"> -->
-
-		<div id="linkToExperiments" onclick="warning()">
-			<div id="l1"></div> <div id="l2"></div> <div id="l3"></div>
-		</div>
-	<!-- </a> -->
-
-	<div class="last_spacer"></div>	
-
-	<footer> <h2>
-		<a href="https://drive.google.com/file/d/139Ek4s8bf8SBJ4jZw5vkSP0ZlB6LydRD/view?usp=sharing" class="button">Google Drive<br>- Resume -</a>
-	</h2>
-	</footer>
-
-	<div class="last_spacer"></div>
-
-	<script src="script.js"></script>
 </body>
+
 </html>
-<!-- cd desktop/m_c_t/Access_GitHub_Portforlio/repo_to_push_online/My-Portfolio -->

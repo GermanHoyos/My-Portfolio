@@ -1,6 +1,6 @@
 html, body { /* html is key in getting the grid to verticaly exapnd 100% */
-    background: rgb(40,40,62);
-    background: linear-gradient(180deg, rgba(53,73,117,1)  0%, rgba(40,40,62,1) 50%, rgba(53,73,117,1) 100%);
+    background: rgb(31,31,48);
+    background: linear-gradient(180deg, rgba(31,31,48,1) 0%, rgba(53,73,117,1) 40%, rgba(40,40,62,1) 60%, rgba(53,73,117,1) 100%);
 	margin: 0px;
 	padding: 0px;
     border: 0px;

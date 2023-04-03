@@ -1,5 +1,6 @@
 html, body { /* html is key in getting the grid to verticaly exapnd 100% */
-	background-color: #28283e;
+    background: rgb(40,40,62);
+    background: linear-gradient(180deg, rgba(40,40,62,1) 0%, rgba(53,73,117,1) 50%, rgba(40,40,62,1) 100%);
 	margin: 0px;
 	padding: 0px;
     border: 0px;
@@ -27,7 +28,6 @@ html, body { /* html is key in getting the grid to verticaly exapnd 100% */
 body {
 	/* overflow-y: hidden; */
 }
-
 
 .outerMostGrid {
 	display: grid;

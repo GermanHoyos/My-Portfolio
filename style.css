@@ -105,8 +105,9 @@
 
 .logoPosition { /* center the logo HACK */
     position: relative;
-    left: 50%;
-    margin-left: -50px;
+    /* left: 50%;
+    margin-left: -50px; */
+    float: right;
 }
 
 a, a:hover, a:focus, a:active, a:visited {
@@ -116,16 +117,22 @@ a, a:hover, a:focus, a:active, a:visited {
 
 .linkPosition {
     position: relative;
-    left: 50%;
+    float: right;
     top: 10%;
     margin-left: -50px;
     margin-top: -50px;
 }
 
+.linkPositionCustom {
+    position: absolute;
+    top: 85px;
+    right: 0px;
+}
+
 .examine {
     position: relative;
     font-size: 10px;
-    left: -10px;
+    left: 0px;
     top: -20px;
     width: fit-content;
     background-color: transparent;

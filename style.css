@@ -155,3 +155,12 @@ img {
     max-height:100%;
 }
 
+
+.ResumeDiv {
+    grid-column: 2 / 10; /* start at 2 end at 10 */
+    grid-row: 56 / 57;
+    background-color: transparent;
+    position: relative;
+    line-height: 1.6;
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 
 function startCSSAnimations() {
-    document.getElementById("slide_b").style.animation = 'opacityOn 10s 1';
+    document.getElementById("slide_b").style.animation = 'opacityOn 1s 1';
 }
 
 //startCSSAnimations();
@@ -17,7 +17,7 @@ setInterval(
       if (y < 1) {
         const startHere = document.querySelector('#centerDiv > div > div:nth-child('+ x +')');
           startHere.addEventListener('animationend',clearKeyFrameA);
-            startHere.style.animation = "pulse 0.2s 1";
+            startHere.style.animation = "pulse 1s 1";
               function clearKeyFrameA(){
                 startHere.style.animation = "none";
               }
@@ -60,10 +60,10 @@ setInterval(
 
         const continueHere = document.querySelector('#centerDiv > div > div:nth-child('+ x +')');
           continueHere.addEventListener('animationend',clearKeyFrameB);
-            continueHere.style.animation = "pulse .8s 1";
+            continueHere.style.animation = "pulse 1s 1";
               function clearKeyFrameB(){
                 continueHere.style.animation = "none";
               }
       }
-  }, 48
+  }, 60
 );

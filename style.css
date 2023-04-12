@@ -139,7 +139,7 @@ a, a:hover, a:focus, a:active, a:visited {
 }
 .projTitle {
     position: relative;
-    top: -3px;
+    top: 0px;
     font-size: 10px;
     height: fit-content;
 }

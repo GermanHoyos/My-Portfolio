@@ -23,7 +23,7 @@
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 170px;
-    background-color: rgb(218, 33, 206);
+    background-color: #9d5c30;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -45,7 +45,7 @@
     position: relative;
     top: 0px;
     left: 0px;
-    height:400px;
+    height:420px;
     width: 100%;
 }
 
@@ -55,9 +55,9 @@
     left: 0px;
     height: 250px;
     width: 288px;
-    border: #000000;
+    border: #9d5c30;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: 50%;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;

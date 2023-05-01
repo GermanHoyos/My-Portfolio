@@ -13,6 +13,33 @@
     For screens with a width larger than 500px:
 */
 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: rgb(218, 33, 206);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 53px;
+    left: -115%;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
 #modHeader {
     background-color: transparent;
     position: relative;
@@ -28,7 +55,7 @@
     left: 0px;
     height: 250px;
     width: 288px;
-    border: #0f0f1b;
+    border: #000000;
     border-style: solid;
     border-radius: 20px;
     overflow: hidden;
@@ -57,7 +84,7 @@
     width: 400px;
     height: 50px;
     transform: translate(-50% , 0% );
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 

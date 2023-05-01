@@ -13,6 +13,104 @@
     For screens with a width larger than 500px:
 */
 
+#modHeader {
+    background-color: transparent;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height:400px;
+    width: 100%;
+}
+
+#profilePic {
+    position: relative;
+    top: 30px;
+    left: 0px;
+    height: 250px;
+    width: 288px;
+    border: #0f0f1b;
+    border-style: solid;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#socialMedia {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 60px;
+    height: 50px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+#centerSmlIcons {
+    position: relative;
+    background-color: transparent;
+    top:0%;
+    left: 50%;
+    height: 100%;
+    width: 400px;
+    height: 50px;
+    transform: translate(-50% , 0% );
+    overflow: hidden;
+
+}
+
+#smlLink1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--gb0);
+}
+
+#smlLink2 {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--gb0);
+}
+#smlLink3 {
+    position: absolute;
+    top: 8px;
+    left: 140px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--gb0);
+}
+#smlLink4 {
+    position: absolute;
+    top: 0px;
+    left: 210px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--gb0);
+}
+#smlLink5 {
+    position: absolute;
+    top: 0px;
+    left: 280px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--gb0);
+}
+#smlLink6 {
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--gb0);
+}
+
 ._1 {
 	grid-column: 1;
 	grid-row: 1;

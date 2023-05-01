@@ -9,12 +9,22 @@ html, body { /* html is key in getting the grid to verticaly exapnd 100% */
     font-family: 'Press Start 2P';
 }
 
+.header_0 {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 10px;
+}
+
 .header_1 {
     grid-column: 1 / 11;
     grid-row: 1 / 2;
     background-color: transparent;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .header_2 {

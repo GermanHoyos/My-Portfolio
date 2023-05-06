@@ -95,6 +95,7 @@
     height: 50px;
     width: 50px;
     background-color: var(--gb0);
+    border-block: none;
 }
 
 #smlLink2 {
@@ -104,6 +105,7 @@
     height: 50px;
     width: 50px;
     background-color: var(--gb0);
+    border-block: none;
 }
 #smlLink3 {
     position: absolute;
@@ -112,6 +114,7 @@
     height: 50px;
     width: 50px;
     background-color: var(--gb0);
+    border-block: none;
 }
 #smlLink4 {
     position: absolute;
@@ -120,6 +123,7 @@
     height: 50px;
     width: 50px;
     background-color: var(--gb0);
+    border-block: none;
 }
 #smlLink5 {
     position: absolute;
@@ -128,6 +132,7 @@
     height: 50px;
     width: 50px;
     background-color: var(--gb0);
+    border-block: none;
 }
 #smlLink6 {
     position: absolute;
@@ -136,6 +141,7 @@
     height: 50px;
     width: 50px;
     background-color: var(--gb0);
+    border-block: none;
 }
 
 ._1 {

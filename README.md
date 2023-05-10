@@ -1,10 +1,9 @@
 # My-Portfolio
 
-![PortfolioFace](https://user-images.githubusercontent.com/17045616/220637941-668e008c-fcd5-4a0a-b73d-21484c0305f5.PNG)
+![portfolio](https://github.com/GermanHoyos/My-Portfolio/assets/17045616/8cc8f8a6-4938-42c8-b96a-66701efa4547)
 
-My Current Coding Portfolio.
+My Current Coding Portfolio. Site still under construction. 
 
-Current site still under construction. This current version is ready/satisfactory for job seeking.
 Future goals:
   1) display common sorting algorithms
-  2) customize "sticky: header
+  2) customize header with trig function art

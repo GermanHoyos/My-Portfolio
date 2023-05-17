@@ -232,6 +232,7 @@
     width: 69%;
     background-color: var(--gb0);
     overflow: hidden; 
+    border-radius: 5px;
 }
 
 .logoPosition { /* center the logo HACK */
@@ -278,12 +279,14 @@ a, a:hover, a:focus, a:active, a:visited {
 .projImgPosition {
     position: relative;
     top:15px;
+    
 
 }
 
 img {
     max-width:100%;
     max-height:100%;
+    border-radius: 5px;
 }
 
 

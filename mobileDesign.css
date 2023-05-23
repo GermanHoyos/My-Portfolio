@@ -72,7 +72,7 @@
     }
 
     .ResumeDiv {
-        grid-column: 4 / 10; /* start at 2 end at 10 */
+        grid-column: 2 / 10; /* start at 2 end at 10 */
         grid-row: 65 / 67;
         background-color: transparent;
         position: relative;
@@ -144,7 +144,7 @@
     }
 
     .ResumeDiv {
-        grid-column: 0 / 10; /* start at 2 end at 10 */
+        grid-column: 2 / 10; /* start at 2 end at 10 */
         grid-row: 65 / 67;
         background-color: transparent;
         position: relative;

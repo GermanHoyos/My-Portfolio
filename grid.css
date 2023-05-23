@@ -44,7 +44,7 @@ body {
 	display: grid;
 	/*height: calc(100% - 1px);*/ /* this can be used to lock a grids inner width / height */
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(66, 50px);
+	grid-template-rows: repeat(70, 50px);
 }
 
 div.outerMostGrid > * {

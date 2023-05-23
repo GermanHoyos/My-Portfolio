@@ -7,6 +7,7 @@ html, body { /* html is key in getting the grid to verticaly exapnd 100% */
 	color: white;
 	/* height: 100%;  */ /* this can be used to lock a grid to inner width / height */
     font-family: 'Press Start 2P';
+    /* font-family: 'Kanit', sans-serif; */
 }
 
 .header_0 {
@@ -43,7 +44,7 @@ body {
 	display: grid;
 	/*height: calc(100% - 1px);*/ /* this can be used to lock a grids inner width / height */
 	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(57, 50px);
+	grid-template-rows: repeat(66, 50px);
 }
 
 div.outerMostGrid > * {

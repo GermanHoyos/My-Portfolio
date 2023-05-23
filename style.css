@@ -162,6 +162,7 @@
     line-height: 1.6;
 }
 
+
 .project_2 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 12 / 19;
@@ -197,6 +198,14 @@
 .project_6 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 48 / 55;
+    background-color: var(--gb0);
+    position: relative;
+    line-height: 1.6;
+}
+
+.project_7 {
+    grid-column: 2 / 10; /* start at 2 end at 10 */
+    grid-row: 57 / 64;
     background-color: var(--gb0);
     position: relative;
     line-height: 1.6;
@@ -283,6 +292,11 @@ a, a:hover, a:focus, a:active, a:visited {
 
 }
 
+.projImgPositionGif {
+    position: relative;
+    top:15px;
+}
+
 img {
     max-width:100%;
     max-height:100%;
@@ -291,8 +305,8 @@ img {
 
 
 .ResumeDiv {
-    grid-column: 2 / 10; /* start at 2 end at 10 */
-    grid-row: 56 / 57;
+    grid-column: 4 / 10; /* start at 2 end at 10 */
+    grid-row: 65 / 67;
     background-color: transparent;
     position: relative;
     line-height: 1.6;

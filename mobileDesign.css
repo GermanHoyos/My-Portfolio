@@ -32,13 +32,13 @@
     }
 
     .project_3 {
-        grid-column: 1 / 11; /* start at 2 end at 10 */
+        grid-column: 1 / 11; 
         grid-row: 21 / 28;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
-    
+
     .project_4 {
         grid-column: 1 / 11; /* start at 2 end at 10 */
         grid-row: 30 / 37;
@@ -62,10 +62,18 @@
         position: relative;
         line-height: 1.6;
     }
+    
+    .project_7 {
+        grid-column: 1 / 11; /* start at 2 end at 10 */
+        grid-row: 57 / 64;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
 
     .ResumeDiv {
         grid-column: 4 / 10; /* start at 2 end at 10 */
-        grid-row: 56 / 57;
+        grid-row: 65 / 67;
         background-color: transparent;
         position: relative;
         line-height: 1.6;
@@ -96,13 +104,13 @@
     }
 
     .project_3 {
-        grid-column: 3 / 9; /* start at 2 end at 10 */
+        grid-column: 3 / 9; 
         grid-row: 21 / 28;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
-    
+
     .project_4 {
         grid-column: 3 / 9; /* start at 2 end at 10 */
         grid-row: 30 / 37;
@@ -126,10 +134,18 @@
         position: relative;
         line-height: 1.6;
     }
+    
+    .project_7 {
+        grid-column: 3 / 9; /* start at 2 end at 10 */
+        grid-row: 57 / 64;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
 
     .ResumeDiv {
-        grid-column: 4 / 10; /* start at 2 end at 10 */
-        grid-row: 56 / 57;
+        grid-column: 0 / 10; /* start at 2 end at 10 */
+        grid-row: 65 / 67;
         background-color: transparent;
         position: relative;
         line-height: 1.6;

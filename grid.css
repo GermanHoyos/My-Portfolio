@@ -1,11 +1,31 @@
-html, body { /* html is key in getting the grid to verticaly exapnd 100% */
+/* html, body { 
     background: rgb(31,31,48);
     background: linear-gradient(180deg, rgba(31,31,48,1) 0%, rgba(53,73,117,1) 40%, rgba(40,40,62,1) 60%, rgba(53,73,117,1) 100%);
 	margin: 0px;
 	padding: 0px;
     border: 0px;
 	color: white;
-	/* height: 100%;  */ /* this can be used to lock a grid to inner width / height */
+    font-family: 'Press Start 2P';
+} */
+
+html, body { /* html is key in getting the grid to vertically expand 100% */
+
+    background: rgb(31,31,48);
+
+    background: repeating-linear-gradient(
+        180deg,
+        rgba(15, 15, 27)   0px,
+        rgb(31,31,48)  1200px,
+        rgba(15, 15, 27) 2400px
+    );
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+
+    /* height: 100%; */
+
     font-family: 'Press Start 2P';
     /* font-family: 'Kanit', sans-serif; */
 }

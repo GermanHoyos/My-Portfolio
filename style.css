@@ -20,7 +20,7 @@
     border-bottom: none;
   }
   
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 170px;
     background-color: #9d5c30;
@@ -28,13 +28,15 @@
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    
+
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    top: 53px;
-    left: -115%;
-  }
+
+    bottom: 110%;          /* place above icon */
+    left: 50%;             /* center horizontally */
+    transform: translateX(-50%);
+}
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -55,7 +57,7 @@
     left: 0px;
     height: 250px;
     width: 288px;
-    border: #9d5c30;
+    border: #2c0000;
     border-style: solid;
     border-radius: 50%;
     overflow: hidden;
@@ -154,7 +156,7 @@
 	grid-row: 10;
 }
 
-.project_1 {
+.project_07 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 3 / 10;
     background-color: var(--gb0);
@@ -163,7 +165,7 @@
 }
 
 
-.project_2 {
+.project_06 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 12 / 19;
     background-color: var(--gb0);
@@ -171,7 +173,7 @@
     line-height: 1.6;
 }
 
-.project_3 {
+.project_05 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 21 / 28;
     background-color: var(--gb0);
@@ -179,7 +181,7 @@
     line-height: 1.6;
 }
 
-.project_4 {
+.project_04 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 30 / 37;
     background-color: var(--gb0);
@@ -187,7 +189,7 @@
     line-height: 1.6;
 }
 
-.project_5 {
+.project_03 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 39 / 46;
     background-color: var(--gb0);
@@ -195,7 +197,7 @@
     line-height: 1.6;
 }
 
-.project_6 {
+.project_02 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 48 / 55;
     background-color: var(--gb0);
@@ -203,7 +205,7 @@
     line-height: 1.6;
 }
 
-.project_7 {
+.project_01 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 57 / 64;
     background-color: var(--gb0);

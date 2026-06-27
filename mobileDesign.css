@@ -15,11 +15,21 @@
 
 @media (max-width: 600px) {
 
-    
+    .outerMostGrid {
+        grid-template-rows: repeat(90, 50px);
+    }
+
+    .project_08 {
+        grid-column: 1 / 11; /* start at 2 end at 10 */
+        grid-row: 3 / 10;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
     
     .project_07 {
         grid-column: 1 / 11;
-        grid-row: 3 / 10;
+        grid-row: 12 / 19;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
@@ -27,7 +37,7 @@
 
     .project_06 {
         grid-column: 1 / 11; 
-        grid-row: 12 / 19;
+        grid-row: 21 / 28;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
@@ -35,7 +45,7 @@
 
     .project_05 {
         grid-column: 1 / 11; 
-        grid-row: 21 / 28;
+        grid-row: 30 / 37;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
@@ -43,7 +53,7 @@
 
     .project_04 {
         grid-column: 1 / 11; /* start at 2 end at 10 */
-        grid-row: 30 / 37;
+        grid-row: 39 / 46;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
@@ -51,7 +61,7 @@
     
     .project_03 {
         grid-column: 1 / 11; /* start at 2 end at 10 */
-        grid-row: 39 / 46;
+        grid-row: 48 / 55;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
@@ -59,7 +69,7 @@
     
     .project_02 {
         grid-column: 1 / 11; /* start at 2 end at 10 */
-        grid-row: 48 / 55;
+        grid-row: 57 / 64;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
@@ -67,7 +77,15 @@
     
     .project_01 {
         grid-column: 1 / 11; /* start at 2 end at 10 */
-        grid-row: 57 / 64;
+        grid-row: 66 / 73;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+
+    .project_00 {
+        grid-column: 1 / 11;
+        grid-row: 75 / 82;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
@@ -75,7 +93,7 @@
 
     .ResumeDiv {
         grid-column: 2 / 10; /* start at 2 end at 10 */
-        grid-row: 65 / 67;
+        grid-row: 84 / 86;
         background-color: transparent;
         position: relative;
         line-height: 1.6;
@@ -89,57 +107,81 @@
 */
 
 @media (min-width: 2100px) {
-    .project_07 {
-        grid-column: 3 / 9;
+
+    .outerMostGrid {
+        grid-template-rows: repeat(90, 50px);
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project_08 {
+        grid-column: 2 / 10; /* start at 2 end at 10 */
         grid-row: 3 / 10;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
 
-    .project_06 {
-        grid-column: 3 / 9; 
+    .project_07 {
+        grid-column: 2 / 10;
         grid-row: 12 / 19;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
 
-    .project_05 {
-        grid-column: 3 / 9; 
+    .project_06 {
+        grid-column: 2 / 10; 
         grid-row: 21 / 28;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
 
-    .project_04 {
-        grid-column: 3 / 9; /* start at 2 end at 10 */
+    .project_05 {
+        grid-column: 2 / 10; 
         grid-row: 30 / 37;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
-    
-    .project_03 {
-        grid-column: 3 / 9; /* start at 2 end at 10 */
+
+    .project_04 {
+        grid-column: 2 / 10; /* start at 2 end at 10 */
         grid-row: 39 / 46;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
     
-    .project_02 {
-        grid-column: 3 / 9; /* start at 2 end at 10 */
+    .project_03 {
+        grid-column: 2 / 10; /* start at 2 end at 10 */
         grid-row: 48 / 55;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
     
-    .project_01 {
-        grid-column: 3 / 9; /* start at 2 end at 10 */
+    .project_02 {
+        grid-column: 2 / 10; /* start at 2 end at 10 */
         grid-row: 57 / 64;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+    
+    .project_01 {
+        grid-column: 2 / 10; /* start at 2 end at 10 */
+        grid-row: 66 / 73;
+        background-color: var(--gb0);
+        position: relative;
+        line-height: 1.6;
+    }
+
+    .project_00 {
+        grid-column: 2 / 10;
+        grid-row: 75 / 82;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
@@ -147,10 +189,14 @@
 
     .ResumeDiv {
         grid-column: 2 / 10; /* start at 2 end at 10 */
-        grid-row: 65 / 67;
+        grid-row: 84 / 86;
         background-color: transparent;
         position: relative;
         line-height: 1.6;
         text-align: center;
+    }
+
+    .project_08, .project_07, .project_06, .project_05, .project_04, .project_03, .project_02, .project_01, .project_00 {
+        left: -80px;
     }
 }

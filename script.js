@@ -1,21 +1,29 @@
 console.log("script loaded");
 
-window.addEventListener("resize", nameChange);
+function nameChange() {
+    const header1 = document.querySelector(".header_1");
+    const header2 = document.querySelector(".header_2");
+    if (!header1 || !header2) return;
 
-// function nameChange(){
-//     if (window.innerWidth <= 683) {
-//         document.querySelector("body > div > div.header_1").innerHTML = "German Hoyos";
-//         document.querySelector("body > div > div.header_1").style.fontSize = "35px";
-//         document.querySelector("body > div > div.header_1").style.textAlign = "center";
-//         document.querySelector("body > div > div.header_2").style.fontSize = "20px";
+    if (window.innerWidth <= 683) {
+        header1.innerHTML = "Adrian Hoyos";
+        header1.style.fontSize = "26px";
+        header1.style.textAlign = "center";
+        header2.style.fontSize = "16px";
+    } else {
+        header1.innerHTML = "Adrian Hoyos";
+        header1.style.fontSize = "30px";
+        header1.style.textAlign = "center";
+        header2.style.fontSize = "20px";
+    }
+}
 
-//     }
-//     if (window.innerWidth > 683) {
-//         document.querySelector("body > div > div.header_1").innerHTML = "German Adrian Hoyos";
-//         document.querySelector("body > div > div.header_1").style.fontSize = "35px";
-//         document.querySelector("body > div > div.header_1").style.textAlign = "center";
-//         document.querySelector("body > div > div.header_2").style.fontSize = "20px";
-//     }
-// }
-
-nameChange();
+if (document.readyState === 'loading') {
+    document.addEventListener("DOMContentLoaded", () => {
+        window.addEventListener("resize", nameChange);
+        nameChange();
+    });
+} else {
+    window.addEventListener("resize", nameChange);
+    nameChange();
+}

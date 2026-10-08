@@ -19,15 +19,15 @@
         grid-template-rows: repeat(90, 50px);
     }
 
-    .project_08 {
-        grid-column: 1 / 11; /* start at 2 end at 10 */
+    .project_00 {
+        grid-column: 1 / 11;
         grid-row: 3 / 10;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
     
-    .project_07 {
+    .project_01 {
         grid-column: 1 / 11;
         grid-row: 12 / 19;
         background-color: var(--gb0);
@@ -35,7 +35,7 @@
         line-height: 1.6;
     }
 
-    .project_06 {
+    .project_02 {
         grid-column: 1 / 11; 
         grid-row: 21 / 28;
         background-color: var(--gb0);
@@ -43,7 +43,7 @@
         line-height: 1.6;
     }
 
-    .project_05 {
+    .project_03 {
         grid-column: 1 / 11; 
         grid-row: 30 / 37;
         background-color: var(--gb0);
@@ -52,38 +52,38 @@
     }
 
     .project_04 {
-        grid-column: 1 / 11; /* start at 2 end at 10 */
+        grid-column: 1 / 11;
         grid-row: 39 / 46;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
     
-    .project_03 {
-        grid-column: 1 / 11; /* start at 2 end at 10 */
+    .project_05 {
+        grid-column: 1 / 11;
         grid-row: 48 / 55;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
     
-    .project_02 {
-        grid-column: 1 / 11; /* start at 2 end at 10 */
+    .project_06 {
+        grid-column: 1 / 11;
         grid-row: 57 / 64;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
     
-    .project_01 {
-        grid-column: 1 / 11; /* start at 2 end at 10 */
+    .project_07 {
+        grid-column: 1 / 11;
         grid-row: 66 / 73;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
 
-    .project_00 {
+    .project_08 {
         grid-column: 1 / 11;
         grid-row: 75 / 82;
         background-color: var(--gb0);
@@ -115,15 +115,15 @@
         margin-right: auto;
     }
 
-    .project_08 {
-        grid-column: 2 / 10; /* start at 2 end at 10 */
+    .project_00 {
+        grid-column: 2 / 10;
         grid-row: 3 / 10;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
 
-    .project_07 {
+    .project_01 {
         grid-column: 2 / 10;
         grid-row: 12 / 19;
         background-color: var(--gb0);
@@ -131,7 +131,7 @@
         line-height: 1.6;
     }
 
-    .project_06 {
+    .project_02 {
         grid-column: 2 / 10; 
         grid-row: 21 / 28;
         background-color: var(--gb0);
@@ -139,7 +139,7 @@
         line-height: 1.6;
     }
 
-    .project_05 {
+    .project_03 {
         grid-column: 2 / 10; 
         grid-row: 30 / 37;
         background-color: var(--gb0);
@@ -148,38 +148,38 @@
     }
 
     .project_04 {
-        grid-column: 2 / 10; /* start at 2 end at 10 */
+        grid-column: 2 / 10;
         grid-row: 39 / 46;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
     
-    .project_03 {
-        grid-column: 2 / 10; /* start at 2 end at 10 */
+    .project_05 {
+        grid-column: 2 / 10;
         grid-row: 48 / 55;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
     
-    .project_02 {
-        grid-column: 2 / 10; /* start at 2 end at 10 */
+    .project_06 {
+        grid-column: 2 / 10;
         grid-row: 57 / 64;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
     
-    .project_01 {
-        grid-column: 2 / 10; /* start at 2 end at 10 */
+    .project_07 {
+        grid-column: 2 / 10;
         grid-row: 66 / 73;
         background-color: var(--gb0);
         position: relative;
         line-height: 1.6;
     }
 
-    .project_00 {
+    .project_08 {
         grid-column: 2 / 10;
         grid-row: 75 / 82;
         background-color: var(--gb0);

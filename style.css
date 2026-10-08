@@ -1,5 +1,5 @@
 :root {
-    --gb0: "tranparent";
+    --gb0: transparent;
     --gb1: #0f0f1b;
     --gb2: #565a75;
     --gb3: #c6b7be;
@@ -159,7 +159,7 @@
 
 /* main project links  */
 
-.project_08 {
+.project_00 {
     grid-column: 2 / 10; /* start at 2 end at 10 */
     grid-row: 3 / 10;
     background-color: var(--gb0);
@@ -167,25 +167,24 @@
     line-height: 1.6;
 }
 
-.project_07 {
-    grid-column: 2 / 10; /* start at 2 end at 10 */
+.project_01 {
+    grid-column: 2 / 10;
     grid-row: 12 / 19;
     background-color: var(--gb0);
     position: relative;
     line-height: 1.6;
 }
 
-
-.project_06 {
-    grid-column: 2 / 10; /* start at 2 end at 10 */
+.project_02 {
+    grid-column: 2 / 10;
     grid-row: 21 / 28;
     background-color: var(--gb0);
     position: relative;
     line-height: 1.6;
 }
 
-.project_05 {
-    grid-column: 2 / 10; /* start at 2 end at 10 */
+.project_03 {
+    grid-column: 2 / 10;
     grid-row: 30 / 37;
     background-color: var(--gb0);
     position: relative;
@@ -193,32 +192,40 @@
 }
 
 .project_04 {
-    grid-column: 2 / 10; /* start at 2 end at 10 */
+    grid-column: 2 / 10;
     grid-row: 39 / 46;
     background-color: var(--gb0);
     position: relative;
     line-height: 1.6;
 }
 
-.project_03 {
-    grid-column: 2 / 10; /* start at 2 end at 10 */
+.project_05 {
+    grid-column: 2 / 10;
     grid-row: 48 / 55;
     background-color: var(--gb0);
     position: relative;
     line-height: 1.6;
 }
 
-.project_02 {
-    grid-column: 2 / 10; /* start at 2 end at 10 */
+.project_06 {
+    grid-column: 2 / 10;
     grid-row: 57 / 64;
     background-color: var(--gb0);
     position: relative;
     line-height: 1.6;
 }
 
-.project_01 {
-    grid-column: 2 / 10; /* start at 2 end at 10 */
+.project_07 {
+    grid-column: 2 / 10;
     grid-row: 66 / 73;
+    background-color: var(--gb0);
+    position: relative;
+    line-height: 1.6;
+}
+
+.project_08 {
+    grid-column: 2 / 10;
+    grid-row: 75 / 82;
     background-color: var(--gb0);
     position: relative;
     line-height: 1.6;
@@ -300,30 +307,127 @@ a, a:hover, a:focus, a:active, a:visited {
 
 .projImgPosition {
     position: relative;
-    top:15px;
-    
-
+    top: 15px;
 }
 
 .projImgPositionGif {
     position: relative;
-    top:15px;
+    top: 15px;
+}
+
+.retro-media-container {
+    position: relative;
+}
+
+/* Retro Arcade Placeholder (Option A) */
+.retro-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 645px;
+    height: 300px;
+    background: rgba(15, 15, 27, 0.88);
+    border: 2px dashed #00ccff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    z-index: 2;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.retro-placeholder.placeholder-done {
+    opacity: 0;
+    transform: scale(0.97);
+    pointer-events: none;
+}
+
+.retro-spinner {
+    display: flex;
+    gap: 8px;
+}
+
+.pixel-block {
+    width: 12px;
+    height: 12px;
+    background: #00ccff;
+    box-shadow: 0 0 8px #00ccff;
+    animation: pixelPulse 1.2s infinite ease-in-out;
+}
+
+.pixel-block:nth-child(2) {
+    animation-delay: 0.2s;
+    background: #743ebf;
+    box-shadow: 0 0 8px #743ebf;
+}
+
+.pixel-block:nth-child(3) {
+    animation-delay: 0.4s;
+    background: #00ccff;
+    box-shadow: 0 0 8px #00ccff;
+}
+
+@keyframes pixelPulse {
+    0%, 100% {
+        transform: scale(0.7);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+}
+
+.retro-status-msg {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    color: #00ccff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(0, 204, 255, 0.7);
+    animation: textBlink 1.5s infinite;
+}
+
+.retro-retry-msg {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 8px;
+    color: #ffaa00;
+    text-shadow: 0 0 5px rgba(255, 170, 0, 0.7);
+}
+
+@keyframes textBlink {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+}
+
+/* Subtle pulse for small icons while loading */
+.retro-icon-loading {
+    opacity: 0.3 !important;
+    filter: grayscale(1);
+    transition: opacity 0.3s ease;
 }
 
 img {
-    max-width:100%;
-    max-height:100%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 5px;
 }
 
-
-.project_00 {
-    grid-column: 2 / 10; /* start at 2 end at 10 */
-    grid-row: 75 / 82;
-    background-color: var(--gb0);
-    position: relative;
-    line-height: 1.6;
+/* Suppress broken image icon while actively loading/retrying */
+html.js-img-manager img.img-loading {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
+
+html.js-img-manager img.img-loaded {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.4s ease-in-out;
+}
+
 
 .ResumeDiv {
     grid-column: 2 / 10; /* start at 2 end at 10 */
